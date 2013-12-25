@@ -1,0 +1,18 @@
+markdown: rdiscount
+pygments: true
+paginate: 2
+paginate_path: "blog/page:num"
+permalink: /posts/:title
+rdiscount:
+  extensions: [smart]
+title : Ameya Karve
+production_url : http://ameyakarve.com
+description: "Thoughts, code, and more by Ameya Karve."
+disqus_shortname: ameyakarve
+analytics: UA-32899481-1
+gauges: 50f2b533613f5d7c8000000c
+author :
+  name : Ameya Karve
+  github : ameyakarve
+  twitter : ameyakarve
+  email: ameya.karve@gmail.com

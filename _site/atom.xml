@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>Ameya Karve</title>
+ <link href="http://ameyakarve.com/atom.xml" rel="self"/>
+ <link href="http://ameyakarve.com/"/>
+ <updated>2013-12-17T16:11:46+05:30</updated>
+ <id>http://ameyakarve.com</id>
+ <author>
+   <name>Ameya Karve</name>
+ </author>
+
+ 
+ <entry>
+   <title>Big huge placements rant</title>
+   <link href="http://ameyakarve.com/posts/big-huge-placements-rant"/>
+   <updated>2013-12-11T00:00:00+05:30</updated>
+   <id>http://ameyakarve.com/posts/big-huge-placements-rant</id>
+   <content type="html">&lt;p&gt;This rant has been coming for a long time. I am finished with placements at college, and the best part about it is that it is over for me. It has become a part of the society, but placements are not a healthy situation.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Downloading slides from SpeakerDeck</title>
+   <link href="http://ameyakarve.com/posts/downloading-slides-from-speakerdeck"/>
+   <updated>2013-11-05T00:00:00+05:30</updated>
+   <id>http://ameyakarve.com/posts/downloading-slides-from-speakerdeck</id>
+   <content type="html">&lt;p&gt;I was doing this course at college, where the professor decided to make the finals an open-book exam. He puts his slides up on SpeakerDeck. So, like I needed to figure out a way to get them printed without too much of a hassle.&lt;/p&gt;
+
+&lt;p&gt;When I opened up the Networks tab on my Chrome explorer, I figured out that the SpeakerDeck widget actually loads the slides as image files; all I needed to do now was to find a pattern and systematically get all the images. Whenever I hit the next button, the widget made an XHR to the image file of the next slide and fetched it. The URL looked something like&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;https://speakerd.s3.amazonaws.com/presentations/xxxxxxxxxxxxxxxxxxxxx/slide_1.jpg?yyyyyyyyyyyyyy&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;So, all I had to do was to write a quick Shell script, and the files were all mine. The final script was something like&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;for i in 0 1 2 3 4 5 6 7 8 9 10; wget &#39;https://speakerd.s3.amazonaws.com/presentations/xxx/slide_&#39;$i&#39;.jpg?yyy&#39;; end;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Note that this is a function for Fish Shell. You could as well write a corresponding Bash script easily enough. Also, the numbering starts from 0; 10 slides means 0-9.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>First post in labs</title>
+   <link href="http://ameyakarve.com/posts/labs1"/>
+   <updated>2013-10-21T00:00:00+05:30</updated>
+   <id>http://ameyakarve.com/posts/labs1</id>
+   <content type="html">&lt;p&gt;There is nothing here right now. I will add stuff as I get the time&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Welcome to my blog!</title>
+   <link href="http://ameyakarve.com/posts/welcome"/>
+   <updated>2013-10-20T00:00:00+05:30</updated>
+   <id>http://ameyakarve.com/posts/welcome</id>
+   <content type="html">&lt;p&gt;There is nothing here right now. I will add stuff as I get the time&lt;/p&gt;
+</content>
+ </entry>
+ 
+
+</feed>
